@@ -1,5 +1,6 @@
 ### 스택 
 - 파이썬에서 스택은 list의 append(), pop() 을 이용한다 (선입후출)
+- 자바에서는 java.util.Stack 사용 (LinkedList 구현)
 
 ### 큐 
 - 파이썬에서 큐는 deque 자료구조를 활용한다.
