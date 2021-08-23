@@ -29,7 +29,7 @@ public class Ch5_11_MazeEscape {
     }
 
     public static int bfs(int x, int y) {
-        //동빈북은 Node 클래스를 만들어 사용 
+        //동빈북은 Node 클래스를 만들어 사용
         Queue<int[]> q = new LinkedList<>();
         q.offer(new int[]{x,y});
 
