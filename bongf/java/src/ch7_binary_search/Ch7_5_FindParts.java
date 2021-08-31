@@ -17,7 +17,7 @@ public class Ch7_5_FindParts {
         int n = sc.nextInt();
         sc.nextLine();
         //disticnt()로 중복제거
-        //dongbin = 애초에 Set<Integer>로 만들었다. 
+        //dongbin = 애초에 Set<Integer>로 만들었다.
         List<Integer> stock = Arrays.stream(sc.nextLine().split(" "))
                 .map(Integer::valueOf)
                 .distinct()
