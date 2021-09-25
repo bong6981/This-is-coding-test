@@ -2,9 +2,9 @@ package ch11_greedy_questions;
 
 import java.util.Scanner;
 
-public class Ch11_ChoosingABallingBall {
+public class Q5_ChoosingABallingBall {
     public static void main(String[] args) {
-        Ch11_ChoosingABallingBall choosingABallingBall = new Ch11_ChoosingABallingBall();
+        Q5_ChoosingABallingBall choosingABallingBall = new Q5_ChoosingABallingBall();
         System.out.println(choosingABallingBall.solution());
     }
 
