@@ -2,6 +2,7 @@ package ch14_sort_questions;
 
 import java.util.*;
 
+// https://programmers.co.kr/learn/courses/30/lessons/42889
 public class Q25_FailureRate {
     public static void main(String[] args) {
         Q25_FailureRate fr = new Q25_FailureRate();
