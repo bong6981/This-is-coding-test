@@ -3,6 +3,7 @@ package ch15_binary_search_questions;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// https://www.acmicpc.net/problem/2110
 public class Q29_installRouter {
     public static void main(String[] args) {
         Q29_installRouter ir = new Q29_installRouter();
