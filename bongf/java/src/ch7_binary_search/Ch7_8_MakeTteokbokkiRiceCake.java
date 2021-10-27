@@ -28,7 +28,7 @@ public class Ch7_8_MakeTteokbokkiRiceCake {
         int answer = 0;
 
         while( start <= end ) {
-            //dongbin : long으로 해야 한다. 범위 초가
+            //dongbin : long으로 해야 한다. 범위 초과
             int total = 0;
             int mid = (start + end) /2;
             for(int l : arr) {

@@ -14,7 +14,7 @@ public class Q27_CountTargetInSortedArray {
         }
 
         int index = binarySearch(arr, 0, n-1, x);
-        if(index==-1) {
+        if(index== -1) {
             System.out.println(-1);
             return;
         }

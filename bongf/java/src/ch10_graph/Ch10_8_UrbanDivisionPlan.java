@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
+//https://www.acmicpc.net/problem/1647
 // 나는 edges를 2차원 배열로, 동빈북은 Edge 클래스 하나를 만들어 List<Edge> edges;로 만들었다.
 public class Ch10_8_UrbanDivisionPlan {
     int[] parent;
