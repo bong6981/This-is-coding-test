@@ -2,7 +2,7 @@ package ch16_dp_questions;
 
 import java.util.Scanner;
 
-public class GoldMine {
+public class Q31_GoldMine {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
