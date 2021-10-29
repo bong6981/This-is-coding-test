@@ -2,6 +2,7 @@ package ch13_dfs_bfs_questions;
 
 import java.util.Scanner;
 
+//https://www.acmicpc.net/problem/14502
 public class Q16_ResearchInstitute {
     public static int n;
     public static int m;
