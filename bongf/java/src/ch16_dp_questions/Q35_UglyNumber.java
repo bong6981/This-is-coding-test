@@ -52,61 +52,61 @@ public class Q35_UglyNumber {
     }
 
     public static void main(String[] args) {
-        dongbin();
-//        Scanner sc = new Scanner(System.in);
-//        int n = sc.nextInt();
-//        int v = 5;
-//        List<Integer> dp = new ArrayList<>();
-//        for (int i = 0; i <= 5; i++) {
-//            dp.add(i);
-//        }
-//        if(n <=5) {
-//            System.out.println(n);
-//            return;
-//        }
-//        int num = 5;
-//        while(n != v) {
-//            num++;
-//            List<Integer> factors = new ArrayList<>();
-//            for(int i=1; i<= Math.sqrt(num); i++) {
-//                if(num % i == 0) {
-//                    factors.add(i);
-//                    if(i != (num / i)) {
-//                        factors.add(num/i);
-//                    }
-//                }
-//            }
-//            Collections.sort(factors);
-//            boolean right = true;
-//            int cnt = 0;
-//            for(int i : factors) {
-//                if(dp.size() -1 < i) {
-//                    if(cnt == 1) {
-//                        right = false;
-//                        break;
-//                    }
-//                    break;
-//
-//                }
-//                if(dp.get(i) == 0) {
-//                    right = false;
-//                    break;
-//                }
-//                cnt++;
-//            }
-//            if(right) {
-//                for(int j=dp.size()-1; j>=0; j--) {
-//                    if(dp.get(j) != 0) {
-//                        dp.add(dp.get(j) +1);
-//                        break;
-//                    }
-//                }
-//                v++;
-//            }
-//            if(!right) {
-//                dp.add(0);
-//            }
-//        }
-//        System.out.println(dp.size()-1);
+//        dongbin();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int v = 5;
+        List<Integer> dp = new ArrayList<>();
+        for (int i = 0; i <= 5; i++) {
+            dp.add(i);
+        }
+        if(n <=5) {
+            System.out.println(n);
+            return;
+        }
+        int num = 5;
+        while(n != v) {
+            num++;
+            List<Integer> factors = new ArrayList<>();
+            for(int i=1; i<= Math.sqrt(num); i++) {
+                if(num % i == 0) {
+                    factors.add(i);
+                    if(i != (num / i)) {
+                        factors.add(num/i);
+                    }
+                }
+            }
+            Collections.sort(factors);
+            boolean right = true;
+            int cnt = 0;
+            for(int i : factors) {
+                if(dp.size() -1 < i) {
+                    if(cnt == 1) {
+                        right = false;
+                        break;
+                    }
+                    break;
+
+                }
+                if(dp.get(i) == 0) {
+                    right = false;
+                    break;
+                }
+                cnt++;
+            }
+            if(right) {
+                for(int j=dp.size()-1; j>=0; j--) {
+                    if(dp.get(j) != 0) {
+                        dp.add(dp.get(j) +1);
+                        break;
+                    }
+                }
+                v++;
+            }
+            if(!right) {
+                dp.add(0);
+            }
+        }
+        System.out.println(dp.size()-1);
     }
 }
