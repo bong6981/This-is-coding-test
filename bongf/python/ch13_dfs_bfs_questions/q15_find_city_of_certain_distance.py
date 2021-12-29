@@ -1,5 +1,5 @@
 # https://www.acmicpc.net/problem/18352
-
+# 풀이 업데이트 : https://github.com/bong6981/algorithms_websites/commit/41290058595e6af1b01d71fa1b78429f39d8663b#diff-81483f013a021698d6b6d54147c4b3011e7025f376934e3d88994b32b82cfa65
 from collections import deque
 
 # 동빈북과 내 풀이가 다 2%에서 걸린다 
