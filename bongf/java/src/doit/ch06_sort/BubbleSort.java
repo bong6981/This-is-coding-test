@@ -15,7 +15,7 @@ public class BubbleSort {
         arr[idx2] = t;
     }
 
-    private static void bubbleSort(int[] x, int length) {
+    private static void bubbleSortImprovement1(int[] x, int length) {
         int exchanged = 0;
         for (int i = 0; i < x.length; i++) {
             for (int j = x.length - 1; j > i; j--) {
@@ -27,6 +27,21 @@ public class BubbleSort {
             if (exchanged == 0) {
                 break;
             }
+        }
+    }
+
+    private static void bubbleSortImprovement2(int[] x, int length) {
+        int n = x.length;
+        int k = 0;
+        while( k < n-1) {
+            int last = n-1;
+            for (int j = x.length - 1; j > k; j--) {
+                if (x[j - 1] > x[j]) {
+                    swap(x, j - 1, j);
+                    last = j;
+                }
+            }
+            k = last;
         }
     }
 }
