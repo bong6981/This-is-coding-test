@@ -16,12 +16,16 @@ public class BubbleSort {
     }
 
     private static void bubbleSort(int[] x, int length) {
+        int exchanged = 0;
         for (int i = 0; i < x.length; i++) {
-            for (int j = x.length-1; j > i; j--) {
-                if(x[j-1] > x[j]) {
-                    swap(x, j-1, j);
+            for (int j = x.length - 1; j > i; j--) {
+                if (x[j - 1] > x[j]) {
+                    swap(x, j - 1, j);
+                    exchanged++;
                 }
-
+            }
+            if (exchanged == 0) {
+                break;
             }
         }
     }
