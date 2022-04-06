@@ -23,8 +23,6 @@ while k < n - 1:
     k = last
 
 # 셰이커 정렬
-
-
 def shaker_sort(arr):
     left = 0
     right = len(a) - 1

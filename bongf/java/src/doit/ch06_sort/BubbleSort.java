@@ -6,7 +6,6 @@ public class BubbleSort {
     public static void main(String[] args) {
         Scanner stdIn = new Scanner(System.in);
         int[] x = new int[]{1, 3, 6, 4, 7, 8, 9};
-        bubbleSort(x, x.length);
     }
 
     private static void swap(int[] arr, int idx1, int idx2) {
