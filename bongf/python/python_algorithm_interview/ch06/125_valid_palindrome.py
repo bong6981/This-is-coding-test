@@ -1,7 +1,4 @@
 #10.04
-
-
-
 def isPalindrome(s: str) -> bool:
     new_s = ""
     for c in s:
@@ -19,3 +16,11 @@ def isPalindrome(s: str) -> bool:
     return is_palindrome
 
 print(isPalindrome(input()))
+
+
+## 교재재공 문제풀이 
+import re
+def isPalindrome(s: str) -> bool:
+    s.lower()
+    s = re.sub('[^a-z0-9]', '', s)
+    return s == s[::-1]
